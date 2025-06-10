@@ -1,6 +1,6 @@
 function mergeSort(array) {
   if (array.length === 1) {
-    console.log(array[0]);
+    // console.log(array[0]);
     return array;
   }
 
@@ -9,7 +9,7 @@ function mergeSort(array) {
   const leftHalf = array.slice(0, mid);
   const rightHalf = array.slice(mid, array.length);
 
-  console.log(leftHalf, rightHalf);
+  // console.log(leftHalf, rightHalf);
 
   return merge(mergeSort(leftHalf), mergeSort(rightHalf));
 }
