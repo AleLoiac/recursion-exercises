@@ -6,7 +6,7 @@ function fibs(num) {
   return result;
 }
 
-console.log(fibs(11));
+console.log(fibs(8));
 
 function recFibs(num) {
   if (num === 1) {
@@ -21,4 +21,4 @@ function recFibs(num) {
   return array;
 }
 
-console.log(recFibs(22));
+console.log(recFibs(8));
