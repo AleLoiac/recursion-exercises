@@ -6,4 +6,19 @@ function fibs(num) {
   return result;
 }
 
-console.log(fibs(8));
+console.log(fibs(11));
+
+function recFibs(num) {
+  if (num === 1) {
+    return [0];
+  }
+  if (num === 2) {
+    return [0, 1];
+  }
+  const array = recFibs(num - 1);
+  const nextNum = array[array.length - 1] + array[array.length - 2];
+  array.push(nextNum);
+  return array;
+}
+
+console.log(recFibs(22));
